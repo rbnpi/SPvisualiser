@@ -18,13 +18,13 @@ Before continuing, you need to set up a mechanism to connect the Audio out of So
 
 In my case I set up a loopback virtual device with Sonic Pi as its default audio source, selected that as the default input AND output. That feeds Sonic Pi to the default input. To listen to Sonic Pi I then used the Sound Source utility Play-Thru window to patch the loopback device to the built-in Output. YOu can also control all the levels in this window.
 
-7. Having setup the loopback configuration, start Sonic Pi. This uses the current audio settings WHEN IT IS LAUNCHED, so don't change them afterwards. (apart from switching on and off the play-thru which can be done).
+8. Having setup the loopback configuration, start Sonic Pi. This uses the current audio settings WHEN IT IS LAUNCHED, so don't change them afterwards. (apart from switching on and off the play-thru which can be done).
 
-8. In the first terminal window type `node bridge.ps`
-8. start the http server in the second window by typing `http-server`
-9. start a browser. Preferred is Chrome, but I have also tried Firefox and Safari
-10. go to `http://127.0.0.1:8080`
-11. You should see a listing of the contents of your P5 folder
-12. Click on the link for `SPtest`
-13. If you see a popup asking for permission to link to your microphone, assent.
-14. Load the Sonic Pi program SPVisulaserTest.rb from the SPtest folder into Sonic Pi and start it running.
+9. In the first terminal window type `node bridge.ps`
+10. start the http server in the second window by typing `http-server`
+11. start a browser. Preferred is Chrome, but I have also tried Firefox and Safari
+12. go to `http://127.0.0.1:8080`
+13. You should see a listing of the contents of your P5 folder
+14. Click on the link for `SPtest`
+15. If you see a popup asking for permission to link to your microphone, assent.
+16. Load the Sonic Pi program SPVisulaserTest.rb from the SPtest folder into Sonic Pi and start it running.
