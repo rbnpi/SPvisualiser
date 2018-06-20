@@ -2,6 +2,7 @@
 P5.js visualiser developed for use with Sonic Pi
 
 WIP MORE TO COME
+THE SOUND INTERFACE STUFF HERE IS SPECIFIC TO MAC. I AM PLAYING WITH GETTING IT GOING ON A RASPBERRY PI WITH PI-SOUND BOARD, BUT HAVEN'T GOT THERE YET.
 
 My first foray into using P5.js. Here is what I did:
 1. Install node.js  I used `https://nodejs.org/dist/v8.11.3/node-v8.11.3.pkg`
@@ -20,11 +21,18 @@ In my case I set up a loopback virtual device with Sonic Pi as its default audio
 
 8. Having setup the loopback configuration, start Sonic Pi. This uses the current audio settings WHEN IT IS LAUNCHED, so don't change them afterwards. (apart from switching on and off the play-thru which can be done).
 
-9. In the first terminal window type `node bridge.ps`
-10. start the http server in the second window by typing `http-server`
-11. start a browser. Preferred is Chrome, but I have also tried Firefox and Safari
-12. go to `http://127.0.0.1:8080`
-13. You should see a listing of the contents of your P5 folder
-14. Click on the link for `SPtest`
-15. If you see a popup asking for permission to link to your microphone, assent.
-16. Load the Sonic Pi program SPVisulaserTest.rb from the SPtest folder into Sonic Pi and start it running.
+9. Clone or download this repository to your computer, and then copy the enclosed sketch folders SPtest, SPtestWithFreqAnalysis to your P% folder top level. Alternatively you can mov the whole SPvisualiser folder to your P5 folder, but in that case you will have to modifiy the  <SCRIPT> locations in the index.html file of each sketch to relect the fact that it is nested one level deeper. eg change `<script src="../p5.min.js"></script>` to
+  `<script src="../../p5.min.js"></script>` and so on.
+  
+10. In the first terminal window type `node bridge.ps`
+11. start the http server in the second window by typing `http-server`
+12. start a browser. Preferred is Chrome, but I have also tried Firefox and Safari
+13. go to `http://127.0.0.1:8080`
+14. You should see a listing of the contents of your P5 folder
+15. Click on the link for `SPtest`
+16. If you see a popup asking for permission to link to your microphone, assent.
+17. Load the Sonic Pi program SPVisulaserTest.rb from the SPtest folder into Sonic Pi and start it running.
+
+You can use the back arrow on your browser and select  SPtestWithFreqAnalysis to try out this version. (This uses the same Sonic Pi program as SPtest). 
+
+The third example SPvisualDisplay (TO BE ADDED) is highly configurable via OSC controlled settings. A block of code an be added in Sonic Pi to various existing programs to eanble them to be run with visual support. The example can also be interfaced to TouchOSC which can also control about 50 different settings, and can be used to do so in real time.
