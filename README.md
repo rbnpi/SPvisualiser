@@ -2,6 +2,7 @@
 P5.js visualiser developed for use with Sonic Pi
 
 WIP MORE TO COME
+
 THE SOUND INTERFACE STUFF HERE IS SPECIFIC TO MAC. I AM PLAYING WITH GETTING IT GOING ON A RASPBERRY PI WITH PI-SOUND BOARD, BUT HAVEN'T GOT THERE YET.
 
 BREAKING CHANGES. Sketches now located within the SPVisualiser folder which is placed inside the P5 folder so index.html files have been altered to reflect the new location
