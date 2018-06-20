@@ -32,7 +32,7 @@ volMult = 5000; //scaling factor
 var freq; //holds calculated fundamental frequency of input
 
 function setup() {
-    cnv=createCanvas(window.innerHeight, window.innerHeight); //setup resizable square window
+    cnv=createCanvas(window.innerWidth, window.innerHeight); //setup resizable square window
     centreCanvas();
     colorMode(HSB);
     angleMode(DEGREES);
